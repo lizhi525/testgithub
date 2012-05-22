@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>jumpgame</title>
+	<meta name="description" content="" />
+	
+	<script src="js/swfobject.js"></script>
+	<script>
+		var flashvars = {
+		};
+		var params = {
+			menu: "false",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "",
+			wmode: "direct" // can cause issues with FP settings & webcam
+		};
+		var attributes = {
+			id:"jumpgame"
+		};
+		swfobject.embedSWF(
+			"jumpgame.swf", 
+			"altContent", "800px", "600px", "10.0.0", 
+			"expressInstall.swf", 
+			flashvars, params, attributes);
+	</script>
+	<style>
+		html, body { height:100%; overflow:hidden; }
+		body { margin:0; }
+	</style>
+</head>
+<body>
+	<div id="altContent">
+		<h1>jumpgame</h1>
+		<p><a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a></p>
+	</div>
+	<p>跳跃游戏编辑器测试，游戏由flashide作为编辑器 导出的xfl格式 作为地图编辑器数据 游戏方向由a,s,w,d控制 ，跳跃键为 j</p>
+	<p><a href="http://game-develop.net/swfs/leveltest/mapedit.zip">地图编辑器下载</a></p>
+	<p>地图编辑器用法，在库中的level包中新建level(数字)元件。copy其它关卡数据 到你新建的元件中</p>
+	<p>拖动元件达到你想要的效果，绿色方块为玩家起始位置，红色方块为过关位置</p>
+	<p>编辑完成后保存，到LIBRARY文件夹中找到生成的关卡xml，黏贴到游戏输入框中，点击按钮测试游戏</p>
+	<p>帖到这里分享你自己制作的游戏关卡 <a href="http://game-develop.net/bbs/viewtopic.php?f=5&t=3" target="block">bbs</a></p>
+</body>
+</html>
