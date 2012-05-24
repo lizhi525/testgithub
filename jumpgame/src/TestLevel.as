@@ -1,7 +1,7 @@
 package  
 {
-	import com.bit101.components.PushButton;
-	import com.bit101.components.TextArea;
+	//import com.bit101.components.PushButton;
+	//import com.bit101.components.TextArea;
 	import flash.display.Shader;
 	import flash.display.Shape;
 	import flash.display.Sprite;
@@ -29,7 +29,7 @@ package
 		private var levelindex:int = -1;
 		
 		private var game:Sprite = new Sprite;
-		private var ta:TextArea;
+		//private var ta:TextArea;
 		public function TestLevel() 
 		{
 			loadnext();
@@ -66,16 +66,16 @@ package
 			input = new Joystick;
 			addChild(input);
 			addChild(game);
-			ta = new TextArea(this, 0, 0, "黏贴关卡代码");
-			new PushButton(this,0,100,"自定义关卡",setxml);
+			//ta = new TextArea(this, 0, 0, "黏贴关卡代码");
+			//new PushButton(this,0,100,"自定义关卡",setxml);
 		}
 		
-		private function setxml(e:Event):void 
+		/*private function setxml(e:Event):void 
 		{
 			var xml:XML = XML(ta.text);
 			levels = [xml];
 			nextlevel();
-		}
+		}*/
 		
 		private function enterFrame(e:Event):void 
 		{
@@ -199,7 +199,7 @@ package
 			
 			grid = [];
 			var xml:XML = levels[levelindex];
-			ta.text = xml;
+			//ta.text = xml;
 			var list:XMLList = xml.*::timeline.*::DOMTimeline.*::layers.*::DOMLayer.*::frames.*::DOMFrame.*::elements.*::DOMSymbolInstance;
 			numCols = 0;
 			for each(var cxml:XML in list) {

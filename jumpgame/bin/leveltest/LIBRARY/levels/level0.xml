@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="levels/level0" itemID="4fb8a843-000002c6" lastModified="1337583153" lastUniqueIdentifier="56">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="levels/level0" itemID="4fb8a843-000002c6" lastModified="1337746628" lastUniqueIdentifier="59">
   <timeline>
     <DOMTimeline name="level0">
       <layers>
@@ -358,7 +358,7 @@
                     <Point x="25" y="25"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="objs/start" selected="true" centerPoint3DX="75" centerPoint3DY="325">
+                <DOMSymbolInstance libraryItemName="objs/start" centerPoint3DX="75" centerPoint3DY="325">
                   <matrix>
                     <Matrix tx="75" ty="325"/>
                   </matrix>
@@ -369,6 +369,30 @@
                 <DOMSymbolInstance libraryItemName="objs/end" centerPoint3DX="475" centerPoint3DY="325">
                   <matrix>
                     <Matrix tx="475" ty="325"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="25" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="objs/stone" centerPoint3DX="300" centerPoint3DY="150">
+                  <matrix>
+                    <Matrix tx="275" ty="125"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="25" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="objs/stone" centerPoint3DX="200" centerPoint3DY="150">
+                  <matrix>
+                    <Matrix tx="175" ty="125"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="25" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="objs/stone" selected="true" centerPoint3DX="150" centerPoint3DY="150">
+                  <matrix>
+                    <Matrix tx="125" ty="125"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="25" y="25"/>

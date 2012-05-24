@@ -6,6 +6,8 @@ package
 	import flash.events.KeyboardEvent;
 	import flash.events.TouchEvent;
 	import flash.ui.Keyboard;
+	import flash.ui.Multitouch;
+	import flash.ui.MultitouchInputMode;
 	/**
 	 * ...
 	 * @author lizhi
@@ -40,6 +42,7 @@ package
 		
 		private function addedToStage(e:Event):void 
 		{
+			Multitouch.inputMode = MultitouchInputMode.TOUCH_POINT
 			removeEventListener(Event.ADDED_TO_STAGE, addedToStage);
 			stage.addEventListener(TouchEvent.TOUCH_BEGIN, stage_touchBegin);
 			stage.addEventListener(TouchEvent.TOUCH_BEGIN, stage_touchBegin2);
