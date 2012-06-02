@@ -1,0 +1,30 @@
+<languageVersion : 1.0;>
+
+kernel VertexProjector
+<   namespace : "net.game-develop";
+    vendor : "game-develop.net";
+    version : 1;
+    description : "are2d";
+>
+{
+    input image3 src1;
+    input image3 src2;
+    input image3 src3;
+    output pixel3 dst;
+        
+    
+    void
+    evaluatePixel()
+    {
+        float2 coord = outCoord();
+        float3 v0 = sample(src1, coord);//z y z
+        float3 v1 = sample(src2, coord);//sx sy r
+        float3 v2 = sample(src3, coord);//x y z offset
+        
+        float cosTsX = cos(v1.z)*v1.x;
+		float sinTsY = sin(v1.z)*v1.y;		
+        dst.x = cosTsX*v2.x-sinTsY*v2.y+v0.x;
+        dst.y=cosTsX*v2.y+sinTsY*v2.x+v0.y;
+        dst.z = v.z;
+    }
+}
